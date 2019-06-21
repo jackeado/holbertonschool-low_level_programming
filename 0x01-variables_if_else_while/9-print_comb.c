@@ -1,20 +1,26 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - Prints Alphabet
  *
- * Return: Always 0 (Success)
+ * Description: Prints alphabet in lowercase.
+ * It's neccesary  strcpy for copy de char array
+ * Return: Always return 0
  */
 int main(void)
 {
-char h = '0';
-for (h = '0'; h <= '9' ; h++)
+int i = '0';
+for (i = '0'; i <= '9' ; i++)
 {
-putchar(h);
+if (i <= '9')
+{
+putchar(i);
 }
-h = 'a';
-for (h = 'a'; h <= 'f' ; h++)
+if (i != '9')
 {
-putchar(h);
+putchar(',');
+putchar(' ');
+}
 }
 putchar('\n');
 return (0);
