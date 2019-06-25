@@ -6,7 +6,6 @@
  * A column of asterisks on the left side,
  * Return:0
  */
-
 int main(void)
 {
 int v;
