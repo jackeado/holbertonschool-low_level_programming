@@ -4,7 +4,7 @@
  * main - this is my function
  *
  * A column of asterisks on the left side,
- * Return: with beginning and ending almost-blank lines.
+ * Return:0
  */
 
 int main(void)
