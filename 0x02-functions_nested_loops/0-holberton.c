@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
-*main prints out Holberton, follow by New line
-*
-*Return 0
+ * main - this is my function
+ *
+ * A column of asterisks on the left side,
+ * Return: with beginning and ending almost-blank lines.
  */
 
 int main(void)
