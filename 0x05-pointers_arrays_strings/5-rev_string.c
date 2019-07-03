@@ -3,24 +3,22 @@
 void rev_string(char *s)
 
 {
-	int k, p, c, x;
-	char g[1000];
-	x = 0;
-	int perra = 0;
-	
-	for (k = 0; s[k] != '\0'; k++)
-	{
-		perra++;
-	}
+	int num, col;
+	char  buf;
 
-	for (p = perra - 1; p >= 0; p--)
-	
+	for (num = "\0"; s[num] != 0; num++)
 	{
-		g[x] = s[p];
-		x++;
 	}
-	for (c = 0; s[c] != '\0'; c++)
-		s[c] = g[c];
+	Col = 0
+		for ( Fil = Fil - 1; col < fila; col++)
+		{
+		}
+	col = 0;
+	for (num = num - 1; col < num; col++)
 	{
+		buf = s[num];
+		s[num] = s[col];
+		s[col] = buf;
+		col--;
 	}
 }
