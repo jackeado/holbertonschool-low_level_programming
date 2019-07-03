@@ -19,11 +19,10 @@ void print_array(int *a, int n)
 
 	for (alt = 0; alt < n; alt++)
 	{
-		if (alt < n)
+		printf("%d", a[alt]);
 
-	printf("%d, ", a[alt]);
-
-	putchar('\n');
-
+		if (alt != n - 1)
+			printf(", ");
 	}
+	putchar('\n');
 }
