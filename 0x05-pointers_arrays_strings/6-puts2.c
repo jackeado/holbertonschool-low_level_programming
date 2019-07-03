@@ -1,15 +1,14 @@
 #include "holberton.h"
 
 /**
- * puts2 - prints one char out of 2 of a string (par)
- * @*str: 
+ * puts2 - function that prints and updates the value
  *
+ * @str: integer value for the function
  */
 
 
 
 void puts2(char *str)
-
 {
 	int pares;
 
