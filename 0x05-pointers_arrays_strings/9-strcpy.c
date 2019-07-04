@@ -1,10 +1,12 @@
 #include "holberton.h"
 
 /**
- * rev_string  - function that reverse strin
- * @dest: array destination
- * @src: array source
+ * _strcpy  - function taht print n elements
  *
+ * @src: array source
+ * @dest: array destination
+ *
+ * Return: valio of a char pointer
  */
 
 char *_strcpy(char *dest, char *src)
@@ -13,7 +15,7 @@ char *_strcpy(char *dest, char *src)
 
 	for (i = 0; src[i] != 0; i++)
 	{
-		dest[i] = src [i];
+		dest[i] = src[i];
 			}
 	dest[i] = '\0';
 	return (dest);
