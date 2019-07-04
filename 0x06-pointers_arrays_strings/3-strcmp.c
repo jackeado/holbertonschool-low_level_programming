@@ -20,10 +20,10 @@ int _strcmp(char *s1, char *s2)
 	for (i = 0; s1[i] != '\0' &&  s2[i] != '\0'; i++)
 	{
 		j = s1[i] - s2[i];
+		if (j != 0)
+		{
 		break;
-	}
-	if (j != 0)
-	{
+		}
 	}
 	return (j);
 }
