@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
  * *leet - encodes into 1337
+ * @sp: translation
  *
- *
- *
+ * Return: encode
  */
 char *leet(char *sp)
 
