@@ -18,9 +18,9 @@ char *leet(char *sp)
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (le[i][0] == sp[i] || le[i][1] == sp[i])
+			if (le[i][0] == sp[j] || le[i][1] == sp[j])
 			{
-				sp[i] = pa[i];
+				sp[j] = pa[i];
 			}
 		}
 	}
