@@ -14,19 +14,21 @@ char *_strchr(char *s, char c)
 
 {
 
-	while (*s != '\0')
+	int p;
+
+	for (p = 0; s[p] != 0; p++)
 	{
-		if (*s == c)
+		if (s[p] == c)
 		{
-			return (s);
+			return (s + p);
 		}
-		if (*s == c)
-                {
-                        return (s);
-                }
-
-		s++;
 	}
+		if (s[p] == c)
+		{
+			return (s + p);
+		}
+		else
+		{
 	return (0);
-
+		}
 }
