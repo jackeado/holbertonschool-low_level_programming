@@ -2,8 +2,8 @@
 /**
  * number - find number
  * @n: for sqrt
- * @num: sqrt
- * Return: num
+ * @m: sqrt
+ * Return: m
  *
  */
 
@@ -26,7 +26,7 @@ int number(int n, int m)
  * _sqrt_recursion - find natural sqrt
  * @n: for sqrt
  *
- * Return: num
+ * Return: m
  *
  */
 int _sqrt_recursion(int n)
