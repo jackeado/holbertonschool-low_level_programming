@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef HOLBERTON_H_
+#define HOLBERTON_H_
 
 /**
  * Structs, enums and unions definitions
