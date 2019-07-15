@@ -4,7 +4,7 @@
 /**
  * Structs, enums and unions definitions
  * Typedefs
- * Function prototypes
+ * Function prototype
  */
 
 int _putchar(char c);
