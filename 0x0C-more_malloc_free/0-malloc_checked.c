@@ -12,17 +12,13 @@
 void *malloc_checked(unsigned int b)
 
 {
-<<<<<<< HEAD
-	void *c;
-=======
-	int *c;
->>>>>>> 722473d600a68cfe7b2ea179530a3b54973bf7bf
+		void *c;
 
-	c = malloc(b);
-	if (c == NULL)
-	{
-	exit(98);
-	return (NULL);
-	}
-	return (c);
+		c = malloc(b);
+		if (c == NULL)
+		{
+			exit(98);
+			return (NULL);
+		}
+		return (c);
 }
