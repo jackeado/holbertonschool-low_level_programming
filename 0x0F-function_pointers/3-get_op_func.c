@@ -6,7 +6,7 @@
 /**
  * get_op_func - selects the correct operation toperform
  * @s: operation to perform
- * 
+ *
  * Return: pointer to the correct function
  */
 
