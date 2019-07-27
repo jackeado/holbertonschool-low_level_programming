@@ -16,7 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int  p;
 	va_list num;
 
-	if (n = 0)
+	if (n == 0)
 	{
 		printf("\n");
 		return;
