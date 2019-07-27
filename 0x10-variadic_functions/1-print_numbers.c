@@ -23,7 +23,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	va_start(num, n);
 
-	for (p = 0; p =< n; p++)
+	for (p = 0; p < n; p++)
 	{
 		printf("%d", va_arg(num, int));
 		if (separator != NULL && p != (n - 1))
