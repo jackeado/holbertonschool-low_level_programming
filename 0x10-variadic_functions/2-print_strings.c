@@ -6,18 +6,16 @@
  * print_strings - Sum of all its parameters
  * @separator: value of parameters
  * @n: value
- *
  * Return: void
  */
 
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int cont, p;
-	va_list num;
+	unsigned int p;
 	char *c;
+	va_list num;
 
-	cont = 0;
 	va_start(num, n);
 
 	if (n == 0)
