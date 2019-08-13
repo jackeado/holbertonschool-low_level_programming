@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
 	int fd;
-	ssize_t let;
+	ssize_t let, len;
 
 	if (filename == NULL)
 	{
@@ -37,12 +37,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	let = read(fd, buffer, letters);
-
-	if (write(STDIN_FILENO, buffer, let) != let)
+	if (let == -1)
+	{
+		free(buffer);
+		return (0);
+	}
+	len = write(STDOUT_FILENO, buffer, let);
+		free(buffer);
+	if (len != let)
 	{
 		return (0);
 	}
-	free(buffer);
 	close(fd);
 	return (let);
 }
