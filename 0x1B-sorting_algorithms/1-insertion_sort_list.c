@@ -1,5 +1,4 @@
 #include "sort.h"
-#include <stdio.h>
 /**
  * insertion_sort_list - list of ints in ascending order using the Insertion
  * sort algorithm
@@ -15,6 +14,8 @@ void insertion_sort_list(listint_t **list)
 
 	if (list == NULL || *list == NULL)
 		return;
+    if (*list != NULL && *list->next == NULL)
+        return;
 
 	h_move = *list;
 	idx = *list;
@@ -26,10 +27,11 @@ void insertion_sort_list(listint_t **list)
 			h_move = h_move->next;
 		else if (h_move != NULL && h_move->n < h_move->prev->n)
 		{
-			temp = h_move;
-			h_move = h_move->next;
-			temp->prev->next = temp->next;
-			if (h_move)
+	    temp = h_move;
+       h_move = h_move->next;
+	    temp->prev->next = temp->next;
+
+	    if (h_move)
 				temp->next->prev = temp->prev;
 			temp->prev = temp->prev->prev;
 			temp->next = temp->prev->next;
