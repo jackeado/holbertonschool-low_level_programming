@@ -25,6 +25,6 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void check(listint_t *temp, listint_t **list);
-
+void swap(int *x, int *y);
 
 #endif /**HOLBERTONSCHOOL_LOW_LEVEL_PROGRAMMING_SORT_H*/
