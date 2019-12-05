@@ -1,5 +1,5 @@
 #include "binary_trees.h"
-#include <stdlib.h>
+
 /**
  * binary_tree_t *binary_tree_node - Fuction creates a binary tree node
  * @parent: pointer to the parent node of the node to create
